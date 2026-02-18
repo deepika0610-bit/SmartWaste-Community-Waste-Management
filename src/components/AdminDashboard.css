@@ -1,0 +1,168 @@
+.admin-dashboard {
+  min-height: 100vh;
+  padding: 2rem;
+  background: #000;
+  color: #00ff66;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-shadow: 0 0 3px #00ff66;
+  margin-bottom: 2rem;
+}
+
+.admin-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  justify-items: center;
+}
+
+.admin-card {
+  background: #111;
+  border: 1px solid #00ff66;
+  border-radius: 15px;
+  padding: 2rem;
+  width: 100%;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.admin-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px #00ff66aa;
+}
+
+.admin-card h2 {
+  margin-bottom: 1rem;
+}
+
+.admin-card p {
+  color: #aaffaa;
+}
+
+/* Reports List */
+.reports-list, .contests-list {
+  margin-top: 2rem;
+}
+
+.report-card, .contest-card {
+  background-color: #111;
+  border: 1px solid #00ff66;
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.report-card:hover, .contest-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px #00ff66aa;
+}
+
+.report-card p, .contest-card p {
+  margin: 0.3rem 0;
+}
+
+.report-card small, .contest-card small {
+  color: #aaffaa;
+}
+
+.back-btn {
+  margin-bottom: 1rem;
+  
+  padding: 0.6rem 1.2rem;
+  background: #00ff66;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+ 
+
+.back-btn:hover {
+  background: #00cc55;
+}
+
+/* Points input & button */
+.contest-card input {
+  width: 80px;
+  padding: 6px;
+  margin-right: 10px;
+  border-radius: 6px;
+  border: 1px solid #00ff66;
+  background: #000;
+  color: #fff;
+}
+
+.contest-card button {
+  background: #00ff66;
+  color: #000;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.contest-card button:hover {
+  background: #00cc52;
+}
+
+
+/* Status styling */
+.status {
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+.status.accepted {
+  color: #000;
+  background: #00ff66;
+}
+
+.status.rejected {
+  color: #fff;
+  background: #ff4444;
+}
+
+.status.pending {
+  color: #ffaa00;
+}
+
+/* Action buttons */
+.report-actions {
+  margin-top: 10px;
+}
+
+.accept-btn,
+.reject-btn {
+  padding: 8px 14px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.accept-btn {
+  background: #00ff66;
+  color: #000;
+}
+
+.accept-btn:hover {
+  background: #00cc55;
+}
+
+.reject-btn {
+  background: #ff4444;
+  color: #fff;
+}
+
+.reject-btn:hover {
+  background: #cc0000;
+}
